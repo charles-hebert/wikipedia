@@ -3,7 +3,7 @@
 name: scrape Wikipedia with rvest
 on: 
   schedule:
-    - cron: '25 * * * *'
+    - cron: '35 * * * *'
 jobs:
   render:
     runs-on: windows-latest
@@ -17,12 +17,3 @@ jobs:
         shell: Rscript {0}
       - name: Script
         run: Rscript scrape_wikipedia.R
-      - name: Commit files
-        run: |
-          git config --local user.name github-actions
-          #git config --local user.email actions@github.com
-          git add output/*
-          git commit -am "commit on $(date)"
-          git push origin main
-        env:
-          username: github-actions
