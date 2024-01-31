@@ -15,7 +15,7 @@ jobs:
         uses: r-lib/actions/setup-pandoc@master
       - name: Install dependencies
         run: |
-          install.packages(c("rvest", “tidyverse), type = "win.binary")
+          install.packages(c("rvest", "tidyverse"), type = "win.binary")
         shell: Rscript {0}
       - name: Script
         run: Rscript scrape_wikipedia.R
