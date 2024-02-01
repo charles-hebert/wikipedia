@@ -3,7 +3,7 @@
 name: scrape Wikipedia with rvest
 on: 
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 1 * *'
 jobs:
   render:
     runs-on: windows-latest
