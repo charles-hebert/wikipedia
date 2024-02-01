@@ -1,9 +1,9 @@
 
 
-name: scrape Wikipedia with rvest
-on: 
-  schedule:
-    - cron: '12 * * * *'
+#name: scrape Wikipedia with rvest
+#on: 
+  #schedule:
+    #- cron: '* * * * *'
 jobs:
   render:
     runs-on: windows-latest
