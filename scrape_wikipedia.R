@@ -89,7 +89,7 @@ création_data_frame_partenaires <- function(wikipedia_partners_df) {
                                      grepl("Société_canadienne_d'hypothèques_et_de_logement", nom)~ "SCHL",
                                      grepl("Canada_Mortgage_and_Housing_Corporation", nom) ~ "SCHL" ))
   
-  wikipedia_partners_df <- wikipedia_partners_df %>%rename("impressions" = "wikipedia_partners_df")
+  #wikipedia_partners_df <- wikipedia_partners_df %>%rename("impressions" = "wikipedia_partners_df")
   wikipedia_partners_df <<- wikipedia_partners_df %>% select(date, impressions, langue, plateforme, organisation)
   
   #ajout du fichier partenaires au fichier "wikipedia"
