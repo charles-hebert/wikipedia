@@ -22,10 +22,10 @@ jobs:
       - name: Commit files
         run: |
           git config --local user.name github-actions
-          #git config --local user.email actions@github.com
+          #git config --local user.email charles.hebert.osfi@outlook.com
           git add output/*
           git commit -am "commit on $(date)"
           git push origin main
         env:
-          #REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+          #REPO_KEY: ${{secrets.BLASTULA_SECRET}}
           username: github-actions
